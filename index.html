@@ -60,7 +60,7 @@
 
             <br>
             <br>
-            <h2>Generate a Password</h2>
+            <h1>Generate a Password</h1>
 
             <!-- PASSORD CRITERIA SELECTION-->
 
@@ -95,107 +95,72 @@
             <br>
             <br>
 
-            <div>
-                <!-- opening form div-->
-
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">
-                            Special Characters
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                </div>
-                            </div>
-                    </div>
-
-                    </span>
-                </div> <!-- /// special characters box div -->
-
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon2">
-                            Numeric Characters
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                </div>
-                            </div>
-                    </div>
-
-                    </span>
-                </div> <!-- /// #numeric box div-->
-
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon4">
-                            lowercase Characters
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                </div>
-                            </div>
-                    </div>
-
-                    </span>
-                </div> <!-- /// lowercase box div-->
-
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon4">
-                            UPPERCASE Characters
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <input type="checkbox" aria-label="Checkbox for following text input">
-                                </div>
-                            </div>
-                    </div>
-
-                    </span>
-                </div> <!-- /// UPPERCASE box div-->
-
-                <div class="btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-secondary active">
-                        <input type="checkbox" checked> Checked
-                    </label>
-                </div>
-
-            </div> <!-- /// closing form div-->
 
             <div>
                 <!-- NEW FORM DIV-->
+
+                <h2> Select at least one of the following character types for your password. </h2>
+                <h3>(Must select at least one)</h3>
+
+                <br>
 
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
                     <label class="form-check-label" for="defaultCheck1">
                         Special Characters
                     </label>
-                </div>
+                </div> <!-- /// special characters box div -->
+
+                <br>
 
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
                     <label class="form-check-label" for="defaultCheck1">
                         Number Characters
                     </label>
-                </div>
+                </div> <!-- /// #numeric box div-->
+
+                <br>
 
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
                     <label class="form-check-label" for="defaultCheck1">
                         lowercase Characters
                     </label>
-                </div>
+                </div> <!-- /// lowercase box div-->
+
+                <br>
 
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
                     <label class="form-check-label" for="defaultCheck1">
-                        uPPERCASE Characters
+                        UPPERCASE Characters
                     </label>
-                </div>
+                </div> <!-- /// UPPERCASE box div-->
 
+                <br>
+                <br>
 
 
             </div> <!-- /// END NEW FORM DIV-->
+
+            <br>
+            <br>
+
+
+            <h2> Select the number of characters in your password. </h2>
+            <h3>(Must be a numerical value between 8-128)</h3>
+
+            <div>
+                <form name="pgenerate">
+                    <b>Password Length:</b> <input type="text" name="thelength" size=3 value="7">
+                    <br>
+                    <input type="text" size=18 name="output">
+                    <input type="button" value="Generate Password"
+                        onClick="populateform(this.form.thelength.value)"><br />
+                </form>
+            </div>
+
 
             <button id="generate">Generate Password</button>
 
@@ -204,6 +169,12 @@
             <button id="copy">
                 Copy to Clipboard
             </button>
+
+
+            <div>
+
+
+            </div>
 
             <br>
             <br>
@@ -239,12 +210,6 @@
             document.pgenerate.output.value = generatepass(enterlength)
         }
     </script>
-
-    <form name="pgenerate">
-        <input type="text" size=18 name="output">
-        <input type="button" value="Generate Password" onClick="populateform(this.form.thelength.value)"><br />
-        <b>Password Length:</b> <input type="text" name="thelength" size=3 value="7">
-    </form>
 
 
 

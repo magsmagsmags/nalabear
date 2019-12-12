@@ -109,7 +109,7 @@
                     <div class="col-md-12">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                            <label class="form-check-label" for="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck2">
                                 Number Characters
                             </label>
                         </div> <!-- /// #numeric box div-->
@@ -123,7 +123,7 @@
                     <div class="col-md-12">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                            <label class="form-check-label" for="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck2">
                                 lowercase Characters
                             </label>
                         </div> <!-- /// lowercase box div-->
@@ -137,7 +137,7 @@
                     <div class="col-md-12">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                            <label class="form-check-label" for="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck2">
                                 UPPERCASE Characters
                             </label>
                         </div> <!-- /// UPPERCASE box div-->
@@ -214,11 +214,14 @@
             temp = ''
             for (i = 0; i < plength; i++)
                 temp += keylist.charAt(Math.floor(Math.random() * keylist.length))
+            // if I did the "object logic" in my notes, would it be: keylist.special etc? 
+            // How to do more than one?
             return temp
         }
 
         function populateform(enterlength) {
             document.pgenerate.output.value = generatepass(enterlength)
+            // calls the doc, then the length form (pgenerate), then the output of the form, then the output value
         }
     </script>
 

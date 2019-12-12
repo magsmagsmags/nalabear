@@ -20,11 +20,11 @@
         crossorigin="anonymous"></script>
 
     <!-- <RESET link rel= "stylesheet" href="assets/css/2reset.css" -->
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/reset.css">
 
 
     <!-- <link rel= "stylesheet" href="assets/css/style.css" -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/style.css">
 
 
 </head>
@@ -36,18 +36,12 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">
-            <h3>Maggie Kiefer</h3>
+            <h3>Password Generator</h3>
         </a>
 
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link active" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">| Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">| Contact</a>
+                <a class="nav-link active" href="index.html">Blank</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
@@ -56,11 +50,362 @@
 
     </nav> <!-- // end navbar-->
 
-    <br>
-    <br>
-    <br>
+    <container>
+        <!-- main body-->
 
-    <script type="text/javascript"></script>
+        <div>
+            <!-- div 1 - main div -->
+            <!-- ADD ROWS AND COLUMNS NEXT  -->
+
+
+            <br>
+            <br>
+            <h2>Generate a Password</h2>
+
+            <!-- PASSORD CRITERIA SELECTION-->
+
+            <!-- DIV -->
+
+            <!-- SELECT LENGTH: 8-128 Characters (dropdown or field) -->
+
+            <!-- DIV - NEXT SECTION -->
+
+            <!-- SELECT FROM FOLLOWING //MULTIPLE SELECT BOXES// -->
+
+            <!-- Special Characters includes: 
+                    [" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"]      -->
+
+            <!-- Numeric Characters include: 
+                    0123456789 
+                    or combo 
+                    ABOVE 8, INCLUSIVE
+                    BELOW 128, INCLUSIVE    -->
+
+            <!-- lower characters
+                    qwertyuioplkjhgfdsazxcvbnm  -->
+
+            <!-- Uppersace Characters
+                    QWERTYUIOPLKJHGFDSAZXCVBNM  -->
+
+            <textarea readonly id="password" placeholder="Your Secure Password"
+                aria-label="Generated Password"></textarea>
+
+
+            <br>
+            <br>
+            <br>
+
+            <button id="generate">Generate Password</button>
+
+
+
+            <button id="copy">
+                Copy to Clipboard
+            </button>
+
+            <br>
+            <br>
+            <br>
+
+        </div> <!-- // Div 1, main container-->
+
+
+
+        <div>
+
+
+
+            <input type="text" class="form-control" placeholder="8" aria-label="Username"
+                aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                    Special Characters
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox">
+            </div>
+
+            </span>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                    Numeric Characters
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox">
+            </div>
+
+            </span>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                    lowercase Characters
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox">
+            </div>
+
+            </span>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                    UPPERCASE Characters
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="checkbox" aria-label="Checkbox for following text input">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with checkbox">
+            </div>
+
+            </span>
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+        </div>
+
+        <label for="basic-url">Your vanity URL</label>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+            </div>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">With textarea</span>
+            </div>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+
+
+
+
+        </div>
+
+
+    </container> <!-- end container -->
+
+
+    <script type="text/javascript">  //  Javascript area
+
+        var keylist = "abcdefghijklmnopqrstuvwxyz123456789"
+        var temp = ''
+
+        function generatepass(plength) {
+            temp = ''
+            for (i = 0; i < plength; i++)
+                temp += keylist.charAt(Math.floor(Math.random() * keylist.length))
+            return temp
+        }
+
+        function populateform(enterlength) {
+            document.pgenerate.output.value = generatepass(enterlength)
+        }
+    </script>
+
+    <form name="pgenerate">
+        <input type="text" size=18 name="output">
+        <input type="button" value="Generate Password" onClick="populateform(this.form.thelength.value)"><br />
+        <b>Password Length:</b> <input type="text" name="thelength" size=3 value="7">
+    </form>
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <!-- <RESET link rel= "stylesheet" href="assets/css/2reset.css" -->
+    <link rel="stylesheet" href="assets/reset.css">
+
+
+    <!-- <link rel= "stylesheet" href="assets/css/style.css" -->
+    <link rel="stylesheet" href="assets/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- NavBar  -->
+    <!-- Static navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <h3>Password Generator</h3>
+        </a>
+
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Blank</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+            </li>
+        </ul>
+
+    </nav> <!-- // end navbar-->
+
+    <container>
+        <!-- main body-->
+
+        <div>
+            <!-- div 1 - main div -->
+            <!-- ADD ROWS AND COLUMNS NEXT  -->
+
+
+            <br>
+            <br>
+            <h2>Generate a Password</h2>
+
+            <!-- PASSORD CRITERIA SELECTION-->
+
+            <!-- DIV -->
+
+            <!-- SELECT LENGTH: 8-128 Characters (dropdown or field) -->
+
+            <!-- DIV - NEXT SECTION -->
+
+            <!-- SELECT FROM FOLLOWING //MULTIPLE SELECT BOXES// -->
+
+            <!-- Special Characters includes: 
+                    [" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"]      -->
+
+            <!-- Numeric Characters include: 
+                    0123456789 
+                    or combo 
+                    ABOVE 8, INCLUSIVE
+                    BELOW 128, INCLUSIVE    -->
+
+            <!-- lower characters
+                    qwertyuioplkjhgfdsazxcvbnm  -->
+
+            <!-- Uppersace Characters
+                    QWERTYUIOPLKJHGFDSAZXCVBNM  -->
+
+            <textarea readonly id="password" placeholder="Your Secure Password"
+                aria-label="Generated Password"></textarea>
+
+
+            <br>
+            <br>
+            <br>
+
+            <button id="generate">Generate Password</button>
+
+
+
+            <button id="copy">
+                Copy to Clipboard
+            </button>
+
+            <br>
+            <br>
+            <br>
+
+        </div> <!-- // Div 1, main container-->
+
+
+
+    </container> <!-- end container -->
+
+
+    <script type="text/javascript">  //  Javascript area
+
+        var keylist = "abcdefghijklmnopqrstuvwxyz123456789"
+        var temp = ''
+
+        function generatepass(plength) {
+            temp = ''
+            for (i = 0; i < plength; i++)
+                temp += keylist.charAt(Math.floor(Math.random() * keylist.length))
+            return temp
+        }
+
+        function populateform(enterlength) {
+            document.pgenerate.output.value = generatepass(enterlength)
+        }
+    </script>
+
+    <form name="pgenerate">
+        <input type="text" size=18 name="output">
+        <input type="button" value="Generate Password" onClick="populateform(this.form.thelength.value)"><br />
+        <b>Password Length:</b> <input type="text" name="thelength" size=3 value="7">
+    </form>
+
+
+
+
+
+    </script>
 
 
 </body>

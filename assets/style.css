@@ -45,6 +45,12 @@ body {
   background-image: url("../images/email-pattern.png");
 }
 
+#genBtn {
+  background: darkblue;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
 
 #generate {
   background: red;

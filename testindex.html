@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+
+    <!-- <RESET link rel= "stylesheet" href="assets/css/2reset.css" -->
+    <link rel="stylesheet" href="assets/reset.css">
+
+
+    <!-- <link rel= "stylesheet" href="assets/css/style.css" -->
+    <link rel="stylesheet" href="assets/style.css">
+
+
+</head>
+
+<body>
+
+    <!-- NavBar  -->
+    <!-- Static navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <h3>Password Generator</h3>
+        </a>
+
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Blank</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+            </li>
+        </ul>
+
+    </nav> <!-- // end navbar-->
+
+
+
+
+
+    <container>
+        <!-- CONTAINER DIV -->
+
+        <div class="row">
+            <!-- ROW 1 (HEADER) -->
+
+            <div class="col-md-12">
+                <!-- COL Header content-->
+
+                <br>
+                <br>
+                <h1>Generate a Password</h1>
+
+            </div> <!-- /// COL Header content-->
+        </div> <!-- /// END ROW 1 (/HEADER)-->
+
+
+        <div class="row">
+            <!-- ROW 2 (CHARACTER SELECT BOXES)-->
+
+            <div class="col-md-12">
+                <!-- Row 2, Main COL (CHARACTER SELECT BOXES)-->
+
+
+                <div class="row">
+                    <!-- Character boxes Row 1 (Instructions)-->
+                    <div class="col-md-12">
+                        <br>
+                        <br>
+                        <br>
+                        <h2> Select at least one of the following character types for your password. </h2>
+                        <h3>(Must select at least one)</h3>
+                        <br>
+                    </div> <!-- col-->
+                </div> <!-- /// Character boxes Row 1 (Instructions)-->
+
+                <div class="row">
+                    <!-- Character boxes Row 2 (Special Char)-->
+                    <div class="col-md-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Special Characters
+                            </label>
+                        </div> <!-- /// special characters box div -->
+                    </div> <!-- col-->
+                </div> <!-- /// Character boxes Row 2 (Special Char)-->
+
+                <br>
+
+                <div class="row">
+                    <!-- Character boxes Row 3 (Number #)-->
+                    <div class="col-md-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">
+                                Number Characters
+                            </label>
+                        </div> <!-- /// #numeric box div-->
+                    </div> <!-- col-->
+                </div> <!-- /// Character boxes Row 3 (Number #)-->
+
+                <br>
+
+                <div class="row">
+                    <!-- Character boxes Row 4 (lowercase)-->
+                    <div class="col-md-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                            <label class="form-check-label" for="defaultCheck2">
+                                lowercase Characters
+                            </label>
+                        </div> <!-- /// lowercase box div-->
+                    </div> <!-- col-->
+                </div> <!-- /// Character boxes Row 4 (lowercase)-->
+
+                <br>
+
+                <div class="row">
+                    <!-- Character boxes Row 5 (UPPERCASE)-->
+                    <div class="col-md-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                            <label class="form-check-label" for="defaultCheck2">
+                                UPPERCASE Characters
+                            </label>
+                        </div> <!-- /// UPPERCASE box div-->
+                    </div> <!-- col-->
+                </div> <!-- /// Character boxes Row 5 (UPPERCASE)-->
+
+
+            </div> <!-- // Row 2, Main COL (CHARACTER SELECT BOXES)-->
+        </div> <!-- // ROW 2 (CHARACTER SELECT BOXES)-->
+
+
+
+
+        <div class="row">
+            <!-- ROW 3 (PW LENGTH)-->
+            <div class="col-md-12">
+                <!-- Col, Row 3, Main COL (PW LENGTH)-->
+
+                <div class="row">
+                    <!-- pw length, row 1 (INSTRUCTIONS)-->
+                    <div class="col-md-12">
+                        <br>
+                        <br>
+                        <br>
+                        <h2> Select the number of characters in your password. </h2>
+                        <h3>(Must be a numerical value between 8-128)</h3>
+                        <br>
+                    </div>
+                </div> <!-- /// end pw length, row 1 (INSTRUCTIONS)-->
+
+                <div class="row">
+                    <!-- pw length, row 2 (LENGTH FORM)-->
+                    <div class="col-md-12">
+                        <form name="pgenerate">
+                            <b>Password Length:</b> <input type="text" name="thelength" size=3 value="7">
+                            <br>
+                            <br>
+                            <input type="text" size=18 name="output">
+                            <input type="button" value="Generate Password" id="genBtn"
+                                onClick="populateform(this.form.thelength.value)"><br />
+                        </form>
+                    </div>
+                </div> <!-- /// end pw length, row 2 (LENGTH FORM)-->
+
+
+            </div> <!-- // Col, Row 3, Main COL (PW LENGTH)-->
+        </div> <!-- /// End Row 3 (PW LENGTH)-->
+
+
+
+        <div class="row">
+            <!-- ROW 4 (BUTTONS)-->
+
+
+            <div class="col-md-6">
+                <button id="copy">Copy to Clipboard</button>
+            </div>
+
+
+        </div> <!-- /// end ROW 4 (BUTTONS)-->
+
+
+    </container>
+
+
+
+
+    <script type="text/javascript">  //  Javascript area
+
+        var keylist = "#$%&'!()*+,-./:;<=>?@\]^_`{|}~[abcdefghijklmnopqrstuvwxyz123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var temp = ''
+
+        function generatepass(plength) {
+            temp = ''
+            for (i = 0; i < plength; i++)
+                temp += keylist.charAt(Math.floor(Math.random() * keylist.length))
+            // if I did the "object logic" in my notes, would it be: keylist.special etc? 
+            // How to do more than one?
+            return temp
+        }
+
+        function populateform(enterlength) {
+            document.pgenerate.output.value = generatepass(enterlength)
+            // calls the doc, then the length form (pgenerate), then the output of the form, then the output value
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

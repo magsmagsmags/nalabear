@@ -45,7 +45,6 @@ Visit the web app at: https://magsmagsmags.github.io/nalabear/
 
 
 # How to use?
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
 1. Load the web app at https://magsmagsmags.github.io/nalabear/
 1. Select the random password's character length by entering an integer between 8 and 128
 1. Select at least one of the four character-types (uppercase. lowercase, number, symbols/special characters) using the checkbox for each character type

@@ -14,7 +14,8 @@ const randomFunc = {
     symbol: getRandomSymbol
 }
 
-clipboard.addEventListener('click', () => {
+// copy
+clipboard.addEventListener('click', function () {
     const textarea = document.createElement('textarea');
     const password = resultEl.innerText;
 
@@ -28,7 +29,7 @@ clipboard.addEventListener('click', () => {
     alert('Password copied to clipboard');
 });
 
-generate.addEventListener('click', () => {
+generate.addEventListener('click', function () {
     const length = +lengthEl.value;
     const hasLower = lowercaseEl.checked;
     const hasUpper = uppercaseEl.checked;
@@ -48,6 +49,9 @@ function generatePassword(lower, upper, number, symbol, length) {
         alert("Must select character type");
         return '';
     }
+
+    // Doesn't have valid numerical value
+    // alert if: no #, <8, >128
 
     // create a loop
     for (let i = 0; i < length; i += typesCount) {

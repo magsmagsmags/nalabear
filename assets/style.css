@@ -55,11 +55,13 @@ body {
   letter-spacing: 1px;
   height: 50px;
   width: 100%;
+  color: red; 
 }
  
 .result-container #result {
   max-width: calc(100% - 40px);
   word-wrap: break-word;
+
 }
 
 .result-container .btn {
@@ -121,6 +123,17 @@ footer {
 #generate {
   background:#9f7dd3;
   color: white;
+}
+
+#clipboard {
+  background:#9f7dd3;
+  color: white;
+}
+
+#result {
+  color: red;
+  word-wrap: break-word;
+  background-color: white;
 }
 
 

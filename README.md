@@ -1,8 +1,8 @@
 # Project title
 **Random Password Generator**
-*8-128 characters - with the option to include uppercase, lowercase, numbers, and symbols/special characters*
-https://github.com/magsmagsmags/nalabear.git
-https://magsmagsmags.github.io/nalabear/
+* *8-128 characters - with the option to include uppercase, lowercase, numbers, and symbols/special characters*
+* https://github.com/magsmagsmags/nalabear.git
+* https://magsmagsmags.github.io/nalabear/
 
 # Motivation
 Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by JavaScript code.
@@ -37,7 +37,8 @@ The application should have a clean and polished user interface and be responsiv
 * js-standard-style
 
 # Screenshots
-![Screenshot](/images/pwGenScreenshot.png)
+* ![Screenshot](/images/pwGenScreenshot.png)
+* ![Screenshot](/images/pwGenScreenshotGen2.png)
 
 # Installation
 Visit the web app at: https://magsmagsmags.github.io/nalabear/

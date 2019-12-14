@@ -38,7 +38,7 @@ body {
 }
 
 .container {
-  background-color: lightgoldenrodyellow;
+  background-color: #bfa9e0;
   width: 400px;
   max-width: 100%;
   padding: 20px;
@@ -113,8 +113,8 @@ footer {
   height: 50px;
   background-color:#9f7dd3;
   padding: 15px;
-  border-top: 8px solid lightgoldenrodyellow;
-  border-color: lightgoldenrodyellow;
+  border-top: 8px solid #bfa9e0;
+  border-color: #bfa9e0;
   text-align: center;
 }
 

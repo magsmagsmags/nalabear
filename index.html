@@ -30,22 +30,8 @@
         <div class="jumbotron">
             <h1 class="display-4">Password Generator</h1>
 
-            <p class="lead">
-                <h2>Your random password:</h2>
-            </p>
-
-            <div class="resultContainer">
-                <span id="result"></span>
-                <br>
-                <br>
-                <button class="btn" id="clipboard"> Copy password to clipboard
-                </button>
-                <br>
-            </div>
-
             <div class="settings">
-                <br>
-                <br>
+
                 <div class="setting">
                     <label> Password length (between 8-128 characters) </label>
                     <input type="number" id="length" min='8' max='128' value='8' />
@@ -77,6 +63,19 @@
             <button class="btn btn-large" id="generate">
                 Generate your random password
             </button>
+
+            <p class="lead">
+                <h2>Your random password:</h2>
+            </p>
+
+            <div class="resultContainer">
+                <span id="result"></span>
+                <br>
+                <br>
+                <button class="btn" id="clipboard"> Copy password to clipboard
+                </button>
+                <br>
+            </div>
 
         </div> <!-- /// END JUMBOTRON-->
 

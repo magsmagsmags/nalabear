@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-  font-size: 15px;
+  font-size: 14px;
   color: grey;
   margin: 10px 0 20px;
 }
@@ -135,7 +135,7 @@ footer {
 #result {
   color: darkviolet;
   word-wrap: break-word;
-  background-color: white;
+  background-color: lightgoldenrodyellow;
   font-size: 25px; 
 }
 

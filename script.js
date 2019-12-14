@@ -8,10 +8,10 @@ var generateEl = document.getElementById('generate');
 var clipboard = document.getElementById('clipboard');
 
 var randomFunc = {
-    lower: getRandomLower,
-    upper: getRandomUpper,
-    number: getRandomNumber,
-    symbol: getRandomSymbol
+    lower: getLower,
+    upper: getUpper,
+    number: getNumber,
+    symbol: getSymbol
 }
 
 // copy
@@ -66,19 +66,19 @@ function generatePassword(lower, upper, number, symbol, length) {
     return finalPassword;
 }
 
-function getRandomLower() {
+function getLower() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
 
-function getRandomUpper() {
+function getUpper() {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
 
-function getRandomNumber() {
+function getNumber() {
     return +String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 }
 
-function getRandomSymbol() {
+function getSymbol() {
     const symbols = '!@#$%^&*(){}[]=<>/,.'
     return symbols[Math.floor(Math.random() * symbols.length)];
 }

@@ -1,4 +1,4 @@
-# Project title
+# Password Generator
 **Random Password Generator**
 * *8-128 characters - with the option to include uppercase, lowercase, numbers, and symbols/special characters*
 * https://github.com/magsmagsmags/nalabear.git

@@ -56,7 +56,7 @@ Visit the web app at: https://magsmagsmags.github.io/nalabear/
 
 
 # Contribute
-Please reach out to me via Slack (Mags Kiefer) or at sheakiefer@gmaail.com for code suggestions, critiques, feedback, or offers to collaborate. 
+Please reach out to me via Slack (Mags Kiefer) or at sheakiefer@gmail.com for code suggestions, critiques, feedback, or offers to collaborate. 
 
 # Credits
 https://www.notion.so/STEPS-HW-3-Password-Generator-1110a7a418724cd0af54a4e45e33b54f

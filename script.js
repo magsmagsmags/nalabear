@@ -39,6 +39,8 @@ generate.addEventListener('click', function () {
     resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 });
 
+
+// pass gen
 function generatePassword(lower, upper, number, symbol, length) {
     let generatedPassword = '';
     const typesCount = lower + upper + number + symbol;
@@ -50,8 +52,6 @@ function generatePassword(lower, upper, number, symbol, length) {
         return '';
     }
 
-    // Doesn't have valid numerical value
-    // alert if: no #, <8, >128
 
     // create a loop
     for (let i = 0; i < length; i += typesCount) {

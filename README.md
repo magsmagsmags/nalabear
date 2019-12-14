@@ -32,6 +32,7 @@ THEN a password is generated
 
 
 
+
 # Unit 03 JavaScript Homework: Password Generator
 
 ## Description
